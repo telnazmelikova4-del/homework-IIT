@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главная страница</title>
+        <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+        <link href="src/style.css" rel="stylesheet" type="text/css" >
+        <link href="http://localhost/test/css/style_1.css" rel="stylesheet" type="text/css">
+  <link href="http://localhost/test/css/style_2.css" rel="stylesheet" type="text/css">
+ 
+  <!-- Первая внутренняя таблица стилей (для всех устройств) -->
+  <style type="text/css">
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background-color: hwb(25 38% 25%);
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Контейнер для навигации и боковой панели */
+    .top-row {
+  display: flex;          /* включаем flex-контейнер */
+  gap: 15px;              /* расстояние между навигацией и панелью */
+  padding: 15px;
+}
+
+    nav {
+  flex: 2;                /* навигация занимает в 2 раза больше места */
+  background-color: hwb(53 52% 5%);
+  padding: 20px;
+  color: #a98a01;
+}
+
+    nav a {
+      display: block;
+      margin: 8px 0;
+      color: hsl(41, 100%, 32%);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    aside {
+  flex: 1;                /* боковая панель занимает меньше места */
+  background-color: hwb(25 38% 25%);
+  padding: 10px;
+  color: hwb(0 0% 100%);
+}
+
+    /* Контейнер для секций снизу */
+    .sections-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+      background-color: #fff;
+      flex-grow: 1;
+    }
+
+    section {
+      background-color: #cff4fc;
+      padding: 20px;
+      border: 1px solid #bbb;
+    }
+  </style>
+        <header>
+            <h2><p>Шапка</p></h2>
+        </header>
+        <main>
+            <nav>
+                <p>Блок навигации</p>
+                <a class="a1" href="./page1.html">
+
+                    <p>images</p>
+                </a>
+                <a class="a2" href="./page2.html">
+                    
+                    <p>audio</p>
+                </a>
+                <a class="a3" href="./page3.html">
+                    <p>video</p>
+                </a>
+            </nav>
+            <aside>
+                <p>Боковая панель</p>
+            </aside>
+            <section>
+                <p></p>
+            </section>
+            <section>
+                <p></p>
+            </section>
+        </main>
+        <footer>
+            <p>Подвал</p>
+        </footer>
+    </body>
+</html>
